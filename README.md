@@ -9,7 +9,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
   -etc/ansible/elk-yml
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -73,7 +73,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![TODO: Update the path with the name of your screenshot of docker ps output](Images/Elk_Docker_PS.PNG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -111,3 +111,8 @@ _As a **Bonus**, provide the specific commands the user will need to run to down
  - cd /etc/ansible/roles
  - Ansible-playbook filebeat-playbook.yml
  - open a new web browser http://40.113.192.172:5601/app/kibana 
+
+![TODO: Update the path with the name of your diagram](Images/Kibana_1.PNG)
+![TODO: Update the path with the name of your diagram](Images/Kibana_2.PNG)
+![TODO: Update the path with the name of your diagram](Images/Kibana_3.PNG)
+
