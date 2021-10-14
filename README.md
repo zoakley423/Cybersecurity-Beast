@@ -46,7 +46,7 @@ Only the jump box machine can accept connections from the Internet. Access to th
 - Add whitelisted IP addresses_laptop IP address - 99.137.152.122
 
 Machines within the network can only be accessed by jump box.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_ The machine that was allowed access to the Elk VM (10.1.0.4) was the jump box (10.0.0.4) via SSH port 22.
+- Which machine did you allow to access your ELK VM? What was its IP address?_ The machine that was allowed access to the Elk VM (10.1.0.4) was the jump box (10.0.0.4) via SSH port 22.
 
 A summary of the access policies in place can be found in the table below.
 
@@ -63,7 +63,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - What is the main advantage of automating configuration with Ansible?_ The main advantage of automating configuration with Ansible is it saves time by automating installation of packages and configuration of large numbers of servers compares to a manual process.  The playbooks are what makes this happen.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+-  In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 - ... Create Elk Server
 - ... Install docker.io
 - ... Install pip3
@@ -97,8 +97,7 @@ SSH into the control node and follow the steps below:
 - Copy the Filebeat.yml and metribeat.yml file to /etc/ansible/.
 - Update the hosts file to include the host IP address in filebeat,yml file.
 - Run the playbook, and navigate to Kibana to check that the installation worked as expected.
-
-_TODO: Answer the following questions to fill in the blanks:_
+ Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_ The file is filebeat-playbook.yml and is copied to /etc/ansible/hosts/ directory.
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? The file you update to make Ansible run the playbook on a specific machine is filebeat.yml.  This is the configuration file that will be loaded into the Elk-Server for the ansible-playbook to run.  Then you update the host.config.file in the ansible directory.  Create a new group (elk-servers) and add the private IP address of the Elk-Server (10.1.0.4) to the group.  After configuring the filebeat.yml file add the private ip address sof the Elk-Server in lines 1106 and 1806.
 - _Which URL do you navigate to in order to check that the ELK server is running? The URL used to check that the Elk-Srver is running is http://40.113.192.172:5601/app/kibana
